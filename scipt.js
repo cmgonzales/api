@@ -1,9 +1,9 @@
-const crime = "https://data.sfgov.org/resource/cuks-n6tp.json?pddistrict=MISSION&dayofweek=Friday&$order=date%20DESC&$where=date%3E%272018-01-01T12:00:00%27"
+const crime = "https://data.sfgov.org/resource/cuks-n6tp.json?pddistrict=MISSION&dayofweek=Friday&$order=date%20DESC&$where=date%3E%272018-01-01T12:00:00%27&category=TRESPASS"
 
 document.getElementById('btn').addEventListener("click", function(){
 
 
-console.log("clicked")
+
 
 
 $.ajax({
@@ -11,8 +11,22 @@ $.ajax({
     url: crime,
     dataType: "json",
     success: function(data){
-        console.log(data);
+        $.each(data, function(i, crime){
+
+        
+        
+        
+        var node = document.createElement("li");                
+              
+        //node.appendChild(crime);                              
+        document.getElementById("list").appendChild(node);
+       node.appendChild(crime);  
+        });
+      
     }
 })
+
+
+        
 
 });
