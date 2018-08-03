@@ -11,16 +11,16 @@ $.ajax({
     url: crime,
     dataType: "json",
     success: function(data){
-        $.each(data, function(i, crime){
+        $.each(data, function(i, crimes){
 
         
         
         
         var node = document.createElement("li");                
               
-        //node.appendChild(crime);                              
+        node.appendChild.createTextnode(crime);                              
         document.getElementById("list").appendChild(node);
-       node.appendChild(crime);  
+       node.appendChild(node);  
         });
       
     }
