@@ -1,6 +1,12 @@
-$primary-color: yellow;
+$back-top-bottom: black;
 
-h1{
-    color: $primary-color;
+
+footer{
+
+    background-color: $back-top-bottom;
 }
 
+.nav{
+    background-color: $back-top-bottom;
+    ;
+}
