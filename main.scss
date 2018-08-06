@@ -1,12 +1,29 @@
 $back-top-bottom: black;
-
+$text-color: white;
+$navs: 50px;
 
 footer{
 
     background-color: $back-top-bottom;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: $text-color;
+    text-align: center;
+
+}
+.navigation{
+
+    background-color: $back-top-bottom !important;
+}
+.nav-item{
+
+    padding-left: $navs !important;
 }
 
-.nav{
-    background-color: $back-top-bottom;
-    ;
+body{
+background-image: url("jpg/back.jpg");
+background-repeat: no-repeat;
+background-size: cover;
 }

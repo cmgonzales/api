@@ -1,6 +1,19 @@
 footer {
-  background-color: black; }
-
-.nav {
   background-color: black;
- 
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center; }
+
+.navigation {
+  background-color: black !important; }
+
+.nav-item {
+  padding-left: 50px !important; }
+
+body {
+  background-image: url("jpg/back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
