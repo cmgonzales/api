@@ -21,8 +21,8 @@ $.ajax({
         
         var node = document.createElement("li");                
               
-        node.appendChild.createTextnode(crime);                              
-        document.getElementById("list").appendChild(node);
+                               
+        document.getElementById("list").appendChild(crimes);
        node.appendChild(node);  
         });
       
