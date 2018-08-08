@@ -14,22 +14,10 @@ $.ajax({
     url: crime,
     dataType: "json",
     success: function(data){
-        $.each(data, function(i, crimes){
-
+    
+      $("#crime").append(data.date);
         
-        
-        
-        var node = document.createElement("li");                
-              
-                               
-        document.getElementById("list").appendChild(crimes);
-       node.appendChild(node);  
-        });
-      
     }
-})
-
-
-        
-
 });
+
+})

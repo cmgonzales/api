@@ -2,6 +2,7 @@ $back-top-bottom: black;
 $text-color: white;
 $navs: 50px;
 
+
 footer{
 
     background-color: $back-top-bottom;
@@ -26,4 +27,8 @@ body{
 background-image: url("jpg/back.jpg");
 background-repeat: no-repeat;
 background-size: cover;
+}
+
+#crime{
+    color: black;
 }

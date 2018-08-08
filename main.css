@@ -17,3 +17,6 @@ body {
   background-image: url("jpg/back.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
+
+#crime {
+  color: black; }
