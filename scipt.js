@@ -14,9 +14,17 @@ $.ajax({
     url: crime,
     dataType: "json",
     success: function(data){
+        console.log(data);
+
+        for(var i = 0; i < data.length; i++){
     
-      $("#crime").append(data.date);
-        
+      var content = 'address: ' +  data[i].address;
+
+            $(".crime").append(content);
+
+      
+    
+        }
     }
 });
 
