@@ -18,5 +18,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover; }
 
-#crime {
+.crime {
   color: black; }
+
+h1 {
+  color: rebeccapurple; }
+
+button {
+  margin-bottom: 40px; }

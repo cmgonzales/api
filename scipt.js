@@ -20,7 +20,9 @@ $.ajax({
     
       var content = 'address: ' +  data[i].address;
 
-            $(".crime").append(content);
+      content += ' Date: ' + data[i].date;
+
+            $(".crime").append('<li>' + content + '</li>');
 
       
     
