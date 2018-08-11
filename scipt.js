@@ -1,4 +1,7 @@
-const crime = "https://data.sfgov.org/resource/cuks-n6tp.json?pddistrict=MISSION&dayofweek=Friday&$order=date%20DESC&$where=date%3E%272018-01-01T12:00:00%27&category=TRESPASS"
+var crimesapi = "";
+
+console.log(crimesapi)
+const crime = "https://data.sfgov.org/resource/cuks-n6tp.json?pddistrict=MISSION&dayofweek=Friday&$order=date%20DESC&$where=date%3E%272018-01-01T12:00:00%27&category=" + crimesapi
 
 
 
@@ -6,9 +9,11 @@ const crime = "https://data.sfgov.org/resource/cuks-n6tp.json?pddistrict=MISSION
 document.getElementById('btn').addEventListener("click", function(){
 
 
+var crimes = document.getElementById('crimes').value;
 
+crimesapi = crimes.toUpperCase();
 
-
+console.log(crimesapi)
 $.ajax({
     type: 'GET',
     url: crime,
