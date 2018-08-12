@@ -18,6 +18,12 @@ var sfcrimes = ["FRAUD", "WARRANTS", "TRESPASS", "empty"]
 for(var i = 0; i < sfcrimes.length; i++){
     
     if(crimesapi === sfcrimes[i]) {
+
+        var prev = document.getElementById("check");
+
+        while(prev.hasChildNodes()){
+            prev.removeChild(prev.lastChild);
+        }
         
     console.log("test")
     crime = "https://data.sfgov.org/resource/cuks-n6tp.json?pddistrict=MISSION&dayofweek=Friday&$order=date%20DESC&$where=date%3E%272018-01-01T12:00:00%27&category=" + crimesapi

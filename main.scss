@@ -31,17 +31,16 @@ background-size: cover;
 }
 
 .crime{
-    color:white;
+    color:rgb(41, 43, 43);
     margin-top:  20px;
     font-weight: bold;
     
 }
 h1{
     color: $head;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-h3{
-    color: $head;
-}
+
 #crimes{
     width: 40%;
 
