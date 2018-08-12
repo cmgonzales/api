@@ -1,6 +1,7 @@
 $back-top-bottom: black;
 $text-color: white;
 $navs: 50px;
+$head: black;
 
 
 footer{
@@ -30,11 +31,24 @@ background-size: cover;
 }
 
 .crime{
-    color: black;
+    color:white;
+    margin-top:  20px;
+    
+
+    font-weight: bold;
+    
+
 }
 h1{
-    color: rebeccapurple;
+    color: $head;
 }
-button{
-    margin-bottom: 40px;
+h3{
+    color: $head;
+}
+#crimes{
+    width: 40%;
+
+}
+.inputs{
+    display: inline-block;
 }

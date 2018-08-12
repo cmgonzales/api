@@ -11,22 +11,21 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    
-        <nav class="navbar navbar-expand-lg navbar-light bg-light navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                   <div class="navbar-nav">
                     <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link disabled" href="#">Disabled</a>
+                    
                   </div>
                 </div>
               </nav>
             
-              <h1>Please check the crime rate for trespassing in San Francisco</h1>
-              <h3>Please enter tresspass/ fraud/ warrants</h3>
-              <button type="button" id="btn" class="btn btn-primary">Get Data</button>
-              <input type="text" id="crimes">
+              <h1>Crimes in San Francisco</h1>
+              <h3>Please enter trespass/ fraud/ warrants</h3>
+              <button type="button" id="btn" onclick="datas()" class="btn btn-primary inputs">Get Data</button>
+              <input class="form-control inputs" type="text" id="crimes">
 <div id="list"></div>
 
 <ul class="crime" ></ul>
